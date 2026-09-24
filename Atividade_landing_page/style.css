@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ===== Variáveis globais ===== */
 :root {
   --bg-claro: #ffffff;
   --bg-secao: #fcfcfd;
@@ -25,6 +26,7 @@ html {
   --ring-dark: rgba(168, 85, 247, 0.4);
 }
 
+/* ===== Base do layout ===== */
 body {
   position: relative;
   font-family: 'Poppins', sans-serif;
@@ -149,6 +151,7 @@ body::before {
   opacity: 0.9;
 }
 
+/* ===== Navbar ===== */
 .navbar {
   display: flex;
   align-items: center;
@@ -242,6 +245,7 @@ input:focus-visible {
   outline-offset: 3px;
 }
 
+/* ===== Seções do conteúdo ===== */
 .secao-centro {
   position: relative;
   padding: 54px 6% 0;
@@ -362,6 +366,7 @@ input:focus-visible {
   transform: scale(1.03);
 }
 
+/* ===== Hero ===== */
 .hero {
   position: relative;
   display: flex;
@@ -502,6 +507,7 @@ input:focus-visible {
   flex-wrap: nowrap;
 }
 
+/* ===== Destaques ===== */
 .card-destaque {
   width: 330px;
   flex: 0 0 330px;
@@ -582,6 +588,7 @@ input:focus-visible {
   opacity: 0.8;
 }
 
+/* ===== Guia / Passos ===== */
 .secao-passos {
   display: flex;
   align-items: center;
@@ -677,6 +684,7 @@ input:focus-visible {
   border-radius: 20px;
 }
 
+/* ===== Comunidade ===== */
 #comunidade {
   padding-top: 28px;
   padding-bottom: 88px;
@@ -745,6 +753,7 @@ input:focus-visible {
   font-weight: 500;
 }
 
+/* ===== Rodapé ===== */
 .rodape {
   width: 100%;
   padding: 40px 0 26px;
@@ -808,6 +817,7 @@ input:focus-visible {
   font-weight: 500;
 }
 
+/* ===== Responsividade ===== */
 @media (max-width: 1180px) {
   .navbar {
     width: calc(100% - 32px);

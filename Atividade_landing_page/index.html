@@ -1,204 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doramania | O Mundo dos K-Dramas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
+    <!-- Estilos e fontes do projeto -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho da landing page -->
     <header class="navbar">
-        <div class="logo" aria-label="Doramania logo">
-            <img class="logo-image" src="imagens/doramania_logo.jpg" alt="Doramania" style="width: 190px; height: auto; display: block;">
-        </div>
-            <nav class="nav-links">
-                <a href="#generos">Gêneros</a>
-                <a href="#destaques">Mais votados</a>
-                <a href="#guia">Comece a assistir</a>
-                <a href="#comunidade">Comunidade</a>
-            </nav>
-        <div class="nav-acoes">
-            <button id="btn-tema" class="btn-outline">Modo escuro</button>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-texto">
-            <span class="tag-topo">O MUNDO DOS DORAMEIROS</span>
-            <h1 id="titulo-boas-vindas">Descubra os melhores <br><span class="destaque-linha">K-Dramas</span></h1>
-            <p>
-                A Doramania foi criada de dorameiro para dorameiro, aqui compartilhamos
-                os melhores e mais emocionantes K-Dramas para fãs e curiosos.
-            </p>
-
-            <div class="bloco-interativo">
-                <input type="text" id="input-nome" placeholder="Qual o seu nome?">
-                <button id="btn-saiba-mais" class="btn-cta">Saiba mais</button>
-            </div>
-        </div>
-
-        <div class="hero-imagem">
-            <img src="imagens/image-hero.png" alt="Imagem do k-drama Pretendente Surpresa">
-        </div>
-    </section>
-
-    <section id="generos" class="secao-centro">
-        <span class="subtitulo-secao">Gêneros</span>
-        <h2 class="titulo-secao">Categorias E Emoções</h2>
-
-        <div class="grid-generos">
-            <div class="card-genero">
-                <div class="icone-genero">💖</div>
-                <h3>Romance Clássico</h3>
-                <p>Pra chorar no cobertor</p>
-            </div>
-            <div class="card-genero ativo">
-                <div class="icone-genero">🕵️</div>
-                <h3>Suspense e Mistério</h3>
-                <p>Plot twists de explodir a cabeça</p>
-            </div>
-            <div class="card-genero">
-                <div class="icone-genero">😄</div>
-                <h3>Comédia Romântica</h3>
-                <p>Coração quentinho</p>
-            </div>
-            <div class="card-genero">
-                <div class="icone-genero">🧙‍♀️</div>
-                <h3>Fantasia e Épico</h3>
-                <p>Viagem no tempo e magia</p>
-            </div>
-        </div>
-  </section>
-
-  <section id="destaques" class="secao-centro">
-    <span class="subtitulo-secao">Dramas mais amados</span>
-    <h2 class="titulo-secao">Top Destaques</h2>
-
-    <div class="grid-destaques">
-      <article class="card-destaque">
-        <img src="imagens/pousando-no-amor.jpg" alt="Pousando no Amor">
-        <div class="card-destaque-corpo">
-          <h4>Pousando no Amor <br><span class="sub-titulo-card">(Crash Landing on You)</span></h4>
-          <div class="linha-avaliacao">
-            <span>⭐ 4.9</span>
-            <button class="btn-curtir">Curtir <span class="contador">0</span></button>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-destaque">
-        <img src="imagens/vincenzo.jpg" alt="Vincenzo">
-        <div class="card-destaque-corpo">
-          <h4>Vincenzo</h4>
-          <div class="linha-avaliacao">
-            <span>⭐ 4.8</span>
-            <button class="btn-curtir">Curtir <span class="contador">0</span></button>
-          </div>
-        </div>
-      </article>
-
-      <article class="card-destaque">
-        <img src="imagens/alquimia das almas.jpg" alt="Alquimia das Almas">
-        <div class="card-destaque-corpo">
-          <h4>Alquimia das Almas <br><span class="sub-titulo-card">(Alchemy of Souls)</span></h4>
-          <div class="linha-avaliacao">
-            <span>⭐ 4.9</span>
-            <button class="btn-curtir">Curtir <span class="contador">0</span></button>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="guia" class="secao-passos">
-    <div class="passos-info">
-      <span class="subtitulo-secao">Fácil e rápido</span>
-      <h2 class="titulo-secao">Seu Guia Para Maratonar Em 3 Passos</h2>
-
-      <div class="item-passo">
-        <div class="icone-passo amarelo">🎯</div>
-        <div>
-          <h4>Escolha a sua vibe do dia</h4>
-          <p>Choro, riso ou tensão</p>
-        </div>
+      <div class="logo" aria-label="Doramania logo">
+        <img
+          class="logo-image"
+          src="imagens/doramania_logo.jpg"
+          alt="Doramania"
+          style="width: 190px; height: auto; display: block;"
+        />
       </div>
 
-      <div class="item-passo">
-        <div class="icone-passo laranja">🍿</div>
-        <div>
-          <h4>Prepare o lanche</h4>
-          <p>Pipoca, lámen ou tteokbokki</p>
-        </div>
-      </div>
-
-      <div class="item-passo">
-        <div class="icone-passo azul">▶️</div>
-        <div>
-          <h4>Dê o play e ignore as notificações</h4>
-          <p>Hora de relaxar!</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="passos-imagem">
-      <img src="imagens/maratonar.png" alt="Claquete e pipoca" style="border-radius: 20px;">
-    </div>
-  </section>
-
-  <section id="comunidade" class="secao-centro">
-    <span class="subtitulo-secao">VEJA O QUE DIZ A COMUNIDADE</span>
-    <h2 class="titulo-secao">Comentários Dos Dorameiros</h2>
-
-    <div class="grid-comentarios">
-      <div class="comentario-box">
-        <p>"Comecei dizendo que ia assistir só um episódio às 23h e fui dormir às 6h da manhã chorando pelo casal secundário."</p>
-        <div class="autor-comentario">
-          <strong>Ana C.</strong>
-          <span>fã de k-dramas</span>
-        </div>
-      </div>
-
-      <div class="comentario-box">
-        <p>"Chorei tanto no final de Pousando no Amor que até a Tyfany, minha cachorrinha, ficou me olhando assustada no sofá!"</p>
-        <div class="autor-comentario">
-          <strong>Rebeca M.</strong>
-          <span>maratoneira profissional</span>
-        </div>
-      </div>
-
-      <div class="comentario-box">
-        <p>"Fui assistir Vincenzo só pela ação e acabei viciado. A trilha sonora e as reviravoltas são absurdas."</p>
-        <div class="autor-comentario">
-          <strong>Renato M.</strong>
-          <span>dorameiro recente</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="rodape">
-    <div class="rodape-conteudo">
-      <div class="rodape-marca">
-        <img class="footer-logo-image" src="imagens/doramania_logo.jpg" alt="Doramania" style="width: 190px; height: auto; display: block; margin-bottom: 10px;">
-        <p>A sua comunidade de K-Dramas</p>
-      </div>
-      <div class="rodape-links-footer">
+      <nav class="nav-links" aria-label="Navegação principal">
         <a href="#generos">Gêneros</a>
         <a href="#destaques">Mais votados</a>
         <a href="#guia">Comece a assistir</a>
         <a href="#comunidade">Comunidade</a>
+      </nav>
+
+      <div class="nav-acoes">
+        <button id="btn-tema" class="btn-outline" type="button">Modo escuro</button>
       </div>
-    </div>
-    <div class="copyright">
-      <p>2026 Doramania - Desenvolvido para a disciplina de Programação Web.</p>
-    </div>
-  </footer>
+    </header>
 
-  <script src="script.js"></script>
+    <!-- Hero principal -->
+    <section class="hero">
+      <div class="hero-texto">
+        <span class="tag-topo">O MUNDO DOS DORAMEIROS</span>
+        <h1 id="titulo-boas-vindas">
+          Descubra os melhores <br /><span class="destaque-linha">K-Dramas</span>
+        </h1>
+        <p>
+          A Doramania foi criada de dorameiro para dorameiro, aqui compartilhamos
+          os melhores e mais emocionantes K-Dramas para fãs e curiosos.
+        </p>
 
-</body>
+        <div class="bloco-interativo">
+          <input type="text" id="input-nome" placeholder="Qual o seu nome?" />
+          <button id="btn-saiba-mais" class="btn-cta" type="button">Saiba mais</button>
+        </div>
+      </div>
+
+      <div class="hero-imagem">
+        <img src="imagens/image-hero.png" alt="Imagem do k-drama Pretendente Surpresa" />
+      </div>
+    </section>
+
+    <!-- Seção de gêneros -->
+    <section id="generos" class="secao-centro">
+      <span class="subtitulo-secao">Gêneros</span>
+      <h2 class="titulo-secao">Categorias E Emoções</h2>
+
+      <div class="grid-generos">
+        <div class="card-genero">
+          <div class="icone-genero">💖</div>
+          <h3>Romance Clássico</h3>
+          <p>Pra chorar no cobertor</p>
+        </div>
+
+        <div class="card-genero ativo">
+          <div class="icone-genero">🕵️</div>
+          <h3>Suspense e Mistério</h3>
+          <p>Plot twists de explodir a cabeça</p>
+        </div>
+
+        <div class="card-genero">
+          <div class="icone-genero">😄</div>
+          <h3>Comédia Romântica</h3>
+          <p>Coração quentinho</p>
+        </div>
+
+        <div class="card-genero">
+          <div class="icone-genero">🧙‍♀️</div>
+          <h3>Fantasia e Épico</h3>
+          <p>Viagem no tempo e magia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de destaques -->
+    <section id="destaques" class="secao-centro">
+      <span class="subtitulo-secao">Dramas mais amados</span>
+      <h2 class="titulo-secao">Top Destaques</h2>
+
+      <div class="grid-destaques">
+        <article class="card-destaque">
+          <img src="imagens/pousando-no-amor.jpg" alt="Pousando no Amor" />
+          <div class="card-destaque-corpo">
+            <h4>
+              Pousando no Amor <br /><span class="sub-titulo-card">(Crash Landing on You)</span>
+            </h4>
+            <div class="linha-avaliacao">
+              <span>⭐ 4.9</span>
+              <button class="btn-curtir" type="button">Curtir <span class="contador">0</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-destaque">
+          <img src="imagens/vincenzo.jpg" alt="Vincenzo" />
+          <div class="card-destaque-corpo">
+            <h4>Vincenzo</h4>
+            <div class="linha-avaliacao">
+              <span>⭐ 4.8</span>
+              <button class="btn-curtir" type="button">Curtir <span class="contador">0</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-destaque">
+          <img src="imagens/alquimia das almas.jpg" alt="Alquimia das Almas" />
+          <div class="card-destaque-corpo">
+            <h4>
+              Alquimia das Almas <br /><span class="sub-titulo-card">(Alchemy of Souls)</span>
+            </h4>
+            <div class="linha-avaliacao">
+              <span>⭐ 4.9</span>
+              <button class="btn-curtir" type="button">Curtir <span class="contador">0</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção de guia para maratonar -->
+    <section id="guia" class="secao-passos">
+      <div class="passos-info">
+        <span class="subtitulo-secao">Fácil e rápido</span>
+        <h2 class="titulo-secao">Seu Guia Para Maratonar Em 3 Passos</h2>
+
+        <div class="item-passo">
+          <div class="icone-passo amarelo">🎯</div>
+          <div>
+            <h4>Escolha a sua vibe do dia</h4>
+            <p>Choro, riso ou tensão</p>
+          </div>
+        </div>
+
+        <div class="item-passo">
+          <div class="icone-passo laranja">🍿</div>
+          <div>
+            <h4>Prepare o lanche</h4>
+            <p>Pipoca, lámen ou tteokbokki</p>
+          </div>
+        </div>
+
+        <div class="item-passo">
+          <div class="icone-passo azul">▶️</div>
+          <div>
+            <h4>Dê o play e ignore as notificações</h4>
+            <p>Hora de relaxar!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="passos-imagem">
+        <img src="imagens/maratonar.png" alt="Claquete e pipoca" style="border-radius: 20px;" />
+      </div>
+    </section>
+
+    <!-- Comunidade -->
+    <section id="comunidade" class="secao-centro">
+      <span class="subtitulo-secao">VEJA O QUE DIZ A COMUNIDADE</span>
+      <h2 class="titulo-secao">Comentários Dos Dorameiros</h2>
+
+      <div class="grid-comentarios">
+        <div class="comentario-box">
+          <p>
+            "Comecei dizendo que ia assistir só um episódio às 23h e fui dormir às 6h da manhã
+            chorando pelo casal secundário."
+          </p>
+          <div class="autor-comentario">
+            <strong>Ana C.</strong>
+            <span>fã de k-dramas</span>
+          </div>
+        </div>
+
+        <div class="comentario-box">
+          <p>
+            "Chorei tanto no final de Pousando no Amor que até a Tyfany, minha cachorrinha,
+            ficou me olhando assustada no sofá!"
+          </p>
+          <div class="autor-comentario">
+            <strong>Rebeca M.</strong>
+            <span>maratoneira profissional</span>
+          </div>
+        </div>
+
+        <div class="comentario-box">
+          <p>
+            "Fui assistir Vincenzo só pela ação e acabei viciado. A trilha sonora e as reviravoltas
+            são absurdas."
+          </p>
+          <div class="autor-comentario">
+            <strong>Renato M.</strong>
+            <span>dorameiro recente</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <div class="rodape-marca">
+          <img
+            class="footer-logo-image"
+            src="imagens/doramania_logo.jpg"
+            alt="Doramania"
+            style="width: 190px; height: auto; display: block; margin-bottom: 10px;"
+          />
+          <p>A sua comunidade de K-Dramas</p>
+        </div>
+
+        <div class="rodape-links-footer">
+          <a href="#generos">Gêneros</a>
+          <a href="#destaques">Mais votados</a>
+          <a href="#guia">Comece a assistir</a>
+          <a href="#comunidade">Comunidade</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>2026 Doramania - Desenvolvido para a disciplina de Programação Web.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
