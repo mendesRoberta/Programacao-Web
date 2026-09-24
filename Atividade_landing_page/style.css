@@ -367,8 +367,8 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 8% 8rem;
-  min-height: 80vh;
+  padding: 2rem 8% 4rem;
+  min-height: 620px;
   z-index: 1;
 }
 
@@ -479,12 +479,13 @@ input:focus-visible {
 }
 
 .hero-imagem img {
-  width: 649px;
-  height: 649px;
+  width: min(42vw, 649px);
+  height: auto;
+  max-height: 649px;
   object-fit: contain;
   transform: rotate(7.49deg);
   transform-origin: center;
-  margin-left: 712px;
+  margin-left: 0;
   margin-top: 0;
 }
 
