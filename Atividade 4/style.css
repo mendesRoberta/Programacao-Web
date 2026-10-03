@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a2a2a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    height: 830px;
+}
+
+.lista-pacientes {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 32px);
+    max-height: 950px;
+}
+
+.lista-pacientes header,
+.lista-pacientes .link-botao {
+    flex: none;
+}
+
+#lista-pacientes-container {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+header h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+}
+
+.input-group input, .input-group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6C727F;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.input-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    background-color: #E12828; 
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #b91c1c;
+}
+
+.link-botao {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-botao:hover {
+    text-decoration: underline;
+}
+
+.paciente-card {
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.paciente-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.btn-deletar {
+    background-color: #dc2626;
+    display: block;
+    width: auto;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.cartao-paciente{
+    border: 1px solid #6C727F;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
